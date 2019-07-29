@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:textSize="@dimen/magin_16"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Firebase setup"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/features_lt"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:textSize="@dimen/magin_16"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification from console "
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/fb_group_ln"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:textSize="@dimen/magin_16"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification Rest Api(Test by Postman)"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:layout_weight="1"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification local"
+                android:textSize="@dimen/magin_16" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/welfare"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:layout_weight="1"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification forground"
+                android:textSize="@dimen/magin_16" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/fb_group_ac"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:layout_weight="1"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification Background"
+                android:textSize="@dimen/magin_16"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:id="@+id/feedback"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:textSize="@dimen/magin_16"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification with Large image"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:textSize="@dimen/magin_16"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification device to device"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:textSize="@dimen/magin_16"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification Cloud function"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:id="@+id/logout_l"
+            android:layout_height="@dimen/setting_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/magin_24"
+                android:layout_height="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_16"
+                android:background="@drawable/notification"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/magin_4"
+                android:textSize="@dimen/magin_16"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="Notification subscription"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha=".5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/magin_16"
+                android:background="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#c6c6c6"
+            android:alpha=".5"
+            android:layout_marginRight="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_height=".5dp"></LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
