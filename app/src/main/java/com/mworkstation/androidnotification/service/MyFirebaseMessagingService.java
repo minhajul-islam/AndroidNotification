@@ -11,6 +11,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.os.Build;
+import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
@@ -39,6 +40,9 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         RemoteMessage.Notification notification = remoteMessage.getNotification();
         Map<String, String> data = remoteMessage.getData();
 
+        Log.e("mnotificatin",""+notification.getBody());
+        Log.e("mnotificatin",""+notification.getImageUrl());
+        Log.e("mnotificatin",""+notification.getBody());
         sendNotification(notification, data);
     }
 
@@ -50,6 +54,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      */
     private void sendNotification(RemoteMessage.Notification notification, Map<String, String> data) {
         Bitmap icon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+
+        Log.e("ndata",data.toString());
 
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -69,9 +75,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 .setSmallIcon(R.drawable.notification);
 
         try {
-            String picture_url = data.get("picture_url");
+            String picture_url = data.get("image");
             if (picture_url != null && !"".equals(picture_url)) {
                 URL url = new URL(picture_url);
+                Bitmap bigPicture = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                notificationBuilder.setStyle(
+                        new NotificationCompat.BigPictureStyle().bigPicture(bigPicture).setSummaryText(notification.getBody())
+                );
+            }else {
+                URL url = new URL(notification.getImageUrl().toString());
                 Bitmap bigPicture = BitmapFactory.decodeStream(url.openConnection().getInputStream());
                 notificationBuilder.setStyle(
                         new NotificationCompat.BigPictureStyle().bigPicture(bigPicture).setSummaryText(notification.getBody())
